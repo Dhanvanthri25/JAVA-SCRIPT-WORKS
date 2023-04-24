@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>First</title>
+        <script>
+            // var a=[25, 50, "center",75,100];
+            // a.splice(0,1,5);
+            // console.log(a);
+            // var a=[12,23,"KGM",45,56,67];
+            // console.log(a.length);
+
+            // let d=new Date();
+            // d.toDateString("YYYY-MM-DD");
+            // console.log(d);
+            var d=new Date();
+            console.log(d);
+            console.log(d.getMonth()+1);
+            console.log(d.getDate());
+            console.log(d.getDay());
+            console.log(d.getFullYear());
+            
+            console.log("1) "+  new Date().toDateString());
+            console.log("2) "+  new Date().toISOString());
+            console.log("3) "+  new Date().toJSON());
+            console.log("4) "+  new Date().toLocaleDateString());
+            console.log("5) "+  new Date().toLocaleString());
+            console.log("6) "+  new Date().toLocaleTimeString());
+            console.log("7) "+  new Date().toString());
+            console.log("8) "+  new Date().toISOString().slice(0,10));
+            console.log(Math.sqrt(-9));
+            console.log(Math.round(3.9));
+            console.log(Math.ceil(3.96954,2));
+            console.log(Math.floor(3.45));
+
+            // var f="a,f,g";
+            // var arr=f.split(",");
+            // document.write(f[0]);
+            // document.write(f[2]);
+            // document.write(f[arr.length-1]);
+            // for(var i in arr)
+            // {
+            //     document.write("<p>"+arr[i]+"</p>");
+                
+            // }
+
+            function decimals(n, d) {
+    	    
+    	    n = parseFloat(n);
+	        return n.toFixed(d);
+	        
+	        }
+        
+        console.log(decimals(2.100212, 2));
+        console.log(decimals(2.100212, 3));
+        console.log(decimals(2100, 2));
+        
+        function min(a)
+        {
+            var smallest=0;
+            for (var i = 0; i < a.length; i++) 
+            {
+
+            if (smallest > a[i] ) 
+            {
+                smallest = a[i];
+            }
+            }
+            console.log(smallest);
+	    }
+        
+        console.log(min([12,34,56,1]));
+        console.log(min([-12,-34,0,-56,-1]));
+
+
+
+        function is_Natural(n) 
+        {
+	        if (typeof n !== 'number') 
+	        return 'Not a number'; 
+	        return (n >= 0.0) && (Math.floor(n) === n) && n !== Infinity;
+	    }
+        console.log(is_Natural(-15));
+        console.log(is_Natural(1));console.log(is_Natural(10.22));
+        console.log(is_Natural(10/0));
+     
+    function curday(ch)
+     {
+        var today = new Date();
+        var dd =today.getDate();
+        var mm = today.getMonth()+1
+        var yyyy = today.getFullYear();
+
+        today = mm+ch+dd+ch+yyyy;
+        return today;
+        
+     }
+     console.log(curday('-'));
+     console.log(curday('*'));
+         
+
+
+    function daysInMonth (month, year) 
+     {
+    
+        return new Date(year, month, 0).getDate();
+     }
+     776
+
+
+// Month in JavaScript is 0-indexed (January is 0, February is 1, etc), 
+// but by using 0 as the day it will give us the last day of the prior
+// month. So passing in 1 as the month number will return the last day
+// of January, not February
+    console.log(daysInMonth(4,2023)); // 31
+    console.log(daysInMonth(2,2009)); // 28
+    console.log(daysInMonth(2,2008)); // 29
+    
+    var month_name = 
+    function(dt)
+     {
+            mlist = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
+            return mlist[dt.getMonth()];
+         
+     };
+    console.log(month_name(new Date("10/11/2009")));
+    console.log(month_name(new Date("11/13/2014")));
+
+
+    var a="c antony";
+
+
+    
+        </script>
+    </head>
+    <body>
+        <h1>Adding</h1>
+        <input type="text" id="t1">
+        <input type="text" id="t2">
+        <input type="text" id="t3">
+        <input type="button" onclick="sum()" value="submit">
+
+    </body>
+
+</html>

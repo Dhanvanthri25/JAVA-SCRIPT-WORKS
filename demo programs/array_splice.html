@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARRAY SPLICE METHOD</title>
+</head>
+<body>
+    <script>
+            var colors = ["Red","Green","Blue"];
+            var removed = colors.splice(0,2);
+
+            document.write(colors + "<br>"); //prints : Green,Blue
+            document.write(removed + "<br>"); //prints : Red(one item array)
+            document.write(removed.length + "<br>"); //prints : 1
+
+            removed = colors.splice(1,0, "Pink","Yellow"); //insert two items at position one
+            document.write (colors + "<br>");
+            document.write (removed + "<br>");
+            document.write (removed.lenght + "<br>");
+
+            removed = colors.splice(1,1, "Pink","Yellow");
+            document.write (colors + "<br>");
+            document.write (removed+ "<br>");
+            document.write (removed.lenght);
+    </script>
+    
+</body>
+</html>

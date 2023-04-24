@@ -1,0 +1,78 @@
+body{
+    background-color:rgb(253, 248, 248);
+}
+
+
+.maindiv
+{
+    display: flex;
+   
+    background-size: cover;
+    width:30%;
+    height: 30vh;
+    background-color: rgb(81, 99, 93);
+    text-align: center;
+    box-shadow: 5px 2px 5px  rgb(48, 82, 94);
+    border-radius: 50px;
+    background-color: transparent;
+    border: 5px solid gray;
+    color: chartreuse;
+    font-weight: bolder;
+    font-size: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 25px;
+  
+
+}
+
+.displaydiv
+{
+    display: flex;
+    margin-left: 20px;
+    background-image: url("2.webp");
+    background-size: cover;
+   
+    width:50%;
+    height: 70vh;
+    background-color: rgb(71, 204, 224);
+    text-align: center;
+    /* box-shadow: 10px 10px 5px  rgb(48, 82, 94); */
+    border-radius: 50px;
+    background-color: transparent;
+    /* border: 5px solid gray; */
+    color: aliceblue;
+    font-weight: bolder;
+    font-size: 15px;
+  
+  
+
+}
+.table1{
+   background-color:chartreuse;
+   width: 50%;
+   height: 50%;
+  
+}
+caption
+{
+    font-size:x-large;
+    color:white;
+    
+}
+input
+{
+    border-style: solid;
+    background-color: transparent;
+    
+    border-top-right-radius: 30px;
+    border-color: chartreuse;
+    border-width: 2px;
+}
+#sub
+{
+    width: 70px;
+    height: 30px;
+    background-color: chartreuse;
+    border-radius: 50px;
+}

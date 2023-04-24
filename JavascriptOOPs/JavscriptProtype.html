@@ -1,0 +1,27 @@
+<html>
+<head>
+<title></title>
+</head>
+ <body>
+    <p>Hi lets learn Protype</p>
+     <script>
+
+        function Employee(fname,sname)
+        {
+            
+                this.fname=fname;
+            
+                this.sname=sname;
+        }
+
+        Employee.prototype.company="Zoho";
+        var e=new Employee("Meera","Antony");
+        var e1=new Employee("Heera","Antony");
+        document.writeln(e.fname+" "+e.sname+" "+e.company);
+        
+            
+       
+   
+     </script>
+ </body>  
+</html>

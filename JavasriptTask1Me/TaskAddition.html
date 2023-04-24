@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>First</title>
+        <script>
+            function sum()
+            {
+                    var c=parseInt(document.getElementById("m1").value);
+                    var d=parseInt(document.getElementById("m2").value);
+                    document.getElementById("result").value=c+d;
+                    console.log(c+d);
+                    
+            }
+            function sub()
+            {
+                    var c=document.getElementById("m1").value;
+                    var d=document.getElementById("m2").value;
+                    document.getElementById("result").value=c-d;
+                    console.log(c-d);
+                    
+            }
+            function mul()
+            {
+                    var c=document.getElementById("m1").value;
+                    var d=document.getElementById("m2").value;
+                    document.getElementById("result").value=c*d;
+                    console.log(c*d);
+                    
+            }
+            function div()
+            {
+                    var c=document.getElementById("m1").value;
+                    var d=document.getElementById("m2").value;
+                    document.getElementById("result").value=c/d;
+                    console.log(c/d);
+                    
+            }
+            
+
+
+        </script>
+    </head>
+    <body>
+        <h1>Arithmetic Operations</h1>
+        <table>
+        <tr>
+            Mark1:
+            <input type="text" id="m1" name="tex1">
+        </tr>
+        <tr>
+            Mark2:
+        <input type="text" id="m2" name="text2">
+        </tr>
+
+        <tr>
+            Result:
+        <input type="text" id="result" name="rs">
+        </tr>
+        </table>
+        <input type="button" onclick="sum()" value="sum">
+        <input type="button" onclick="sub()" value="sub">
+        <input type="button" onclick="mul()" value="mul">
+        <input type="button" onclick="div()" value="div">
+        
+    </body>
+
+</html>

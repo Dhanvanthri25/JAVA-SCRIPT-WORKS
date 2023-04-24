@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Select numbers</title>
+        
+    </head>
+    
+        <body>
+            <script>
+                function listitems()
+                {
+                    var fname=document.getElementById("fname").value;
+                    var lname=document.getElementById("lname").value;
+                    var dob=document.getElementById("dob").value;
+                    var password=document.getElementById("password").value;
+                
+                    const Name=[{
+                    "Firstname":fname,
+                    "Secondname":lname,
+                    "dob":dob,
+                    "Password":password
+                    }]
+                    for(i in Name)
+                    {
+                        console.log(Name);
+                    }
+                    array.forEach(element => {
+                        
+                    });
+                    
+                 }
+                 function persondet(){
+                    this.name='jack';
+                    this.age=56;
+                    this.sayName=function()
+                    {
+                        console.log(this.age);
+                    }
+                    console.log(this.age);
+                 }
+               
+            </script>
+
+           <input type="text" id="fname" placeholder="Enter your firstname">
+           <input type="text" id="lname" placeholder="Enter your SecondName">
+           <input type="date" id="dob" placeholder="Enter your Date Of Birth">
+           <input type="password" id="password" placeholder="Enter your password">
+           <input type="button" value="Submit" onclick="persondet()">
+
+        </body>
+      
+        
+        
+        
+   
+
+</html>

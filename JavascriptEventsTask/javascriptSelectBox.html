@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Select numbers</title>
+        
+    </head>
+    
+        <body>
+            <script>
+                function fillnumbers()
+                {   
+                    var s=parseInt(document.getElementById("inputnumber").value);  
+                    var sl = document.getElementById("selectvalue");
+                    document.getElementById("selectvalue").style.color="Blue";
+                    console.log(s);
+                    var b='<option>Select</option>';
+                    var a;
+                    for(let i=0;i<=s;i++)
+                    {
+                        b+='<option>'+i+'</option>';
+
+
+                    }
+                    sl.innerHTML = b;
+                }
+                function check()
+                {
+                    var selectedvalue=document.getElementById("selectvalue").value;
+                    console.log(selectedvalue);
+                    document.getElementById("selectvalue").style.color="Red";
+                    var newselectbox=document.getElementById("newselectbox");
+                   
+                    var newselectoptions='<option value="select">Select</option>';
+                   
+                    for(let i=0;i<=selectedvalue;i++)
+                    {
+                        newselectoptions+='<option value="'+i+'">'+i+'</option>';
+
+
+                    }
+                    newselectbox.innerHTML = newselectoptions;
+                }
+                function CreateNewInputs()
+                {
+                    var Finalselectedvalue=document.getElementById("newselectbox").value;
+                    console.log(Finalselectedvalue);
+                    
+                    var input2='<input type="text" placeholder="Enter your username"><input type="password" placeholder="Enter your password"><br>';
+                   
+                    for(let i=1;i<Finalselectedvalue;i++)
+                    {
+                        
+                        input2+='<input type="text" placeholder="Enter your username"><input type="password"  placeholder="Enter your password"><br>';
+
+
+                    }
+                  
+                    document.getElementById("formd").innerHTML=input2;
+                  
+
+                }
+            </script>
+
+            <input type="number" id="inputnumber" placeholder="Enter a valid number"><br><br>
+            <input type="button"  value="submit" onclick="fillnumbers()"><br><br>
+            <select id="selectvalue" onchange="check()">
+                
+            </select><br><br>
+        
+            <select id="newselectbox" onchange="CreateNewInputs()">
+                
+            </select>
+            <br><br>
+            <form id="formd">
+                    
+
+            </form>
+
+        </body>
+      
+        
+        
+        
+   
+
+</html>

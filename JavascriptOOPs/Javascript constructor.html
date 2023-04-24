@@ -1,0 +1,42 @@
+<html>
+<head>
+<title></title>
+</head>
+ <body>
+    <p>Hi lets code in javascript</p>
+     <script>
+
+
+        class Employee
+        {
+            constructor()
+            {
+                this.id=101;
+                this.name="Meera";
+            }
+            
+            detail()
+            {
+                document.writeln(this.id);
+                console.log(this.id)
+            }
+        }
+        class Company extends Employee
+        {
+            constructor(age)
+            {
+                super();
+                this.age=age;
+            }
+        }
+        var c=new Company(21);
+        document.writeln(c.id+" "+c.age);
+        
+            
+        
+            
+       
+   
+     </script>
+ </body>  
+</html>

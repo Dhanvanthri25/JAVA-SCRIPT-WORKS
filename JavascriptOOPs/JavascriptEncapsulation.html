@@ -1,0 +1,45 @@
+<html>
+<head>
+<title></title>
+</head>
+ <body>
+    <p>Hi lets learn encapsulation</p>
+     <script>
+
+        class Employee
+        {
+            constructor()
+            {
+                var name;
+                var marks;
+            }
+            
+            getName()
+            {
+                return this.name;
+            }
+            getMarks()
+            {
+                return this.marks;
+            }
+            setName(name)
+            {
+                this.name=name;
+            }
+            setMarks(marks)
+            {
+                this.marks=marks;
+            }
+
+        }
+        var e=new Employee();
+        e.setName("meera");
+        e.setMarks(100);
+        document.writeln(e.getName()+" = "+e.getMarks());
+        
+            
+       
+   
+     </script>
+ </body>  
+</html>

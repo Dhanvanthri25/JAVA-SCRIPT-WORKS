@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Select numbers</title>
+        
+    </head>
+    
+        <body>
+            <script>
+               
+               function CheckUserName()
+                {
+                    var reg = /^[A-Za-z][A-Za-z0-9_]{4,20}$/;
+                    var a = document.getElementById("uname").value.match(reg);
+                    if(a == null)
+                    {
+                        alert("Your first name is not valid. Only characters A-Z, a-z,0-9 and '_' are  acceptable.");
+                        document.getElementById("uname").focus;
+                        return false;
+                    }
+                }
+              
+            </script>
+
+            <form>
+                <table style="border:2px solid rgb(39, 213, 42);">
+                    <thead>
+                        <caption>----------Login--------</caption>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> <label>UserName</label></td>
+                            <td><input type="text" id="uname" placeholder="User Name" onchange="CheckUserName()"><br><br></td>
+                        </tr>
+
+                        
+                    </tbody>
+
+                </table>
+            </form>
+           
+            
+
+        </body>
+      
+        
+        
+        
+   
+
+</html>

@@ -1,0 +1,11 @@
+const data=[
+    {
+        "firstname":"meera",
+        "secondname":"Antony"
+    },
+    {
+        "firstname":"heera",
+        "secondname":"christo"
+    }
+
+]

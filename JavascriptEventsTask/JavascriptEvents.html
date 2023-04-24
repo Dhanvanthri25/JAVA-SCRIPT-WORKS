@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Select numbers</title>
+        
+    </head>
+    
+        <body>
+            <script>
+               
+                function CreateDate()
+                {
+                    var d=new Date(document.getElementById("dob").value);
+                    document.getElementById("d1").value=(d.getDate(d.setDate(d.getDate()+5))) + "-" + (d.getMonth()+1) + "-" + (d.getFullYear());
+                    document.getElementById("d2").value=(d.getDate(d.setDate(d.getDate()-10))) + "-" + (d.getMonth()+1) + "-" + (d.getFullYear());
+                }
+               
+            </script>
+
+            <input type="date" id="dob" placeholder="Enter your Date">
+            <input type="text" id="d1" placeholder="Date + 5"><br><br>
+            <input type="text" id="d2" placeholder="Date - 5"><br><br>
+            <input type="button"  value="submit" onclick="CreateDate()"><br><br>
+            
+            
+
+        </body>
+      
+        
+        
+        
+   
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript Objects and map function</title>
+    </head>
+    <style>
+        #mytable,td,tr{
+                border:2px solid rgb(39, 27, 27);
+                border-collapse: collapse;
+        }
+    </style>
+    <body onload="display()">
+        
+        <table id="mytable" style="border:2px solid blue;">
+            <thead>
+                <caption>Details of Person</caption>
+            </thead>
+            <tbody id="tablebody">
+               
+            </tbody>
+        </table>
+
+    </body>
+
+
+    
+<script>
+    const newPerson=
+     [
+        {
+            firstname:'Meera',
+            lastname:'Antony',
+            emailid:'mjkjuii@gmail.com',
+            phoneno:'7845856223',
+            password:'1@2565',
+            Address:
+                {       
+                    AddressLine1:'B-B90963',
+                    AddressLine2:'Coimbatore',
+                    city:'Coimbatore',
+                    state:'Tamil Nadu',
+                    country:'India',
+                    pincode:'645254'
+                }
+        },
+    
+        {
+            firstname:'Heera',
+            lastname:'Antony',
+            emailid:'snxmklsxmkl@gmail.com',
+            phoneno:'78488956223',
+            password:'1@29*9545',
+            Address:
+                {       
+                    AddressLine1:'B-B907863',
+                    AddressLine2:'Coimbatore',
+                    city:'Coimbatore',
+                    state:'Tamil Nadu',
+                    country:'India',
+                    pincode:'645254'
+                }
+        }
+    
+    
+    ]
+    
+    function display()
+    {
+       
+        var a='<tr><td>FirstName</td><td>Lastname</td><td>EmailId</td><td>PhoneNumber</td><td>Password</td><td>Address</td><td>City</td>';
+        newPerson.map((value,index)=>
+        {
+    
+           a+='<tr><td>'+value.firstname+'</td><td>'+value.lastname+'</td><td>'+value.emailid+'</td><td>'+value.phoneno+'</td><td>'+value.password+'</td><td>'+value.Address.AddressLine1+' '+value.Address.AddressLine2+' '+value.Address.pincode+'</td><td>'+value.Address.city+'</td>';
+          
+    
+    
+        })
+        document.getElementById("tablebody").innerHTML=a;
+    }
+    </script>
+
+</html>
+
